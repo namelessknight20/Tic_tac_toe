@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic-Tac-Toe AI</title>
+    <!-- Link to the p5.js library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script>
+    <!-- Link to your game logic file -->
+    <script src="sketch.js"></script>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #f0f0f0;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .title {
+            font-size: 2em;
+            color: #333;
+            margin-bottom: 20px;
+        }
+        #p5-canvas {
+            border: 2px solid #333;
+        }
+        .status {
+            font-size: 1.5em;
+            color: #555;
+            margin-top: 20px;
+            min-height: 2em; /* Ensure space for the message */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="title">Tic-Tac-Toe AI</h1>
+        <div id="p5-canvas"></div>
+        <p class="status" id="result"></p>
+    </div>
+</body>
+</html>
